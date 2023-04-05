@@ -1,1 +1,4 @@
-Julieta WolfsohnJulieta WolfsohnJulieta WolfsohnJulieta WolfsohnJulieta Wolfsohn
+Julieta Wolfsohn
+
+EJERCICIO 
+Armar un script que lea el archivo 'mi_arch.txt' y me arme otro archivo 'nuevo_arch.txt' con los primeros 5 caracteres del archivo que hicimos 

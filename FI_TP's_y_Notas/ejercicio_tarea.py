@@ -10,3 +10,4 @@ os.rename(file2, file1)
 os.rename("temporal", file2)
 
 #modificar este script para incorprar el nombres de los archivos desde la terminal 
+

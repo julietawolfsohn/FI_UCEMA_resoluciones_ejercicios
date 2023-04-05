@@ -1,0 +1,27 @@
+#"Escribir un script en el cual debemos movernos a la carpeta Informes y obtener los archivos *.txt que hayan allí. Por cada archivo hay que obtener, por un lado, cuántas veces aparece la palabra "estado" y por otro lado la cantidad de líneas. Por último, hay que crear una carpeta que se llame Apellidos, donde hay que crear un archivo llamado Lista.txt que contenga en cada línea la primer línea de cada archivo .txt obtenidos anteriormente."
+
+#!/usr/bin/env/python3 "si o si siempre"
+
+import os, glob, sys #importo las bibliotecas que voy a usar
+
+def ejercicio_rutas():
+    os.chdir("Informes") #se supone que estamos en esta carpeta ahora sino tengo que ir hasta esa carpeta
+    txt = glob.glob("*.txt") #tiene que ser una variable para despues poder usarlo #lista con cant de archivos
+    cantidad_estado = [] #para cada archivo voy a tener cuantas veces aparece la palabra estado 
+    cantidad_lineas = [] #igual que arriba
+    for archivo in txt: 
+        with open(archivo, "r") as file: #abro un archivoq ue lo llamo file
+            file_completa = file.read()
+            cantidad_estado.append(file_completa.count("estado")) # cuantas veces dice la pslabra estado dentro de la cantidad_estado
+            cantidad_estado.append(file_completa.count("\n"))
+
+
+    os.mkdir("Apellido") #como no aclara donde es donde ya estoy
+    with open("Apellido/Lista.txt", "w") as salida #hay que poner la ruta completa para poder recorrer el archivo
+        for archivo in txt:
+            with open(archivo, "r") as file:
+                primera_linea = file.readline() #opcion 1
+                salida.write(primera_linea)
+                #salida.write(file.readline) #opcion 2 -- #sin la variable intermedia
+
+ejercicio_rutas()

@@ -161,7 +161,7 @@ contador = 0
 for letra in frase:
     if letra == MiLetra:
         contador += 1
-print(("La letra " + MiLetra + " se repite " + str(contador) + " veces"))
+print(("La letra " + MiLetra + " se repite " + str(contador) + "veces"))
 
 #ej16 (NO ME SALE)
 def dinero(dinero_por_mes):
