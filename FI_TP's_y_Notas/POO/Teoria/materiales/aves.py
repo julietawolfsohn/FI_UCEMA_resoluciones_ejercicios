@@ -9,7 +9,10 @@ class Golondrina:
     self.volar(0)
 
   def volar(self, kms):
-    self.energia -= 10 + kms
+    if (self.energia - (10 + kms)) < 1:
+      return "no puede volar"
+    else: 
+      self.energia -= 10 + kms
 
   def esta_feliz(self):
     return self.energia > 50

@@ -69,3 +69,5 @@ En este caso vemos un polimorfismo parcial.
 Para ver polimorfismo necesitamos un observador u otro actor
 
 """
+from aves import pepita
+print(pepita.volar(1))
