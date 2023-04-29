@@ -60,29 +60,38 @@ numeross = [2, 45, 108, 12, 7]
 lista_final = []
 print(numeros_par_o_impar(numeross))
 
-#EJ 6 (VER)
+#EJ 6 
 #Escribir una función que lea un string y devuelva un diccionario con la cantidad de apariciones de cada carácter en la cadena (considerar que las mayúsculas difieren de las minúsculas, por lo que, si el string es "Agua", el carácter "A" tiene 1 aparición y el carácter "a" también tiene 1).
 
-"""lista4 = ["Lucas", "Juli", "Male"; "Sebi"]
-
-def caracter(lista4, letra):
-    if caracter in lista4:
-        return letra + "aparece en el diccionario"
+def contar_caracteres(cadena):
+    biblio_resultado = {}
     
-print(caracter(lista4,"L"))"""
+    for caracter in cadena:
+        if caracter not in biblio_resultado:
+            biblio_resultado[caracter] = 1
+        elif caracter not in cadena:
+            biblio_resultado[caracter] = 0
+        else:
+            biblio_resultado[caracter] += 1
+    return biblio_resultado
+
+print(contar_caracteres("Aguaaa"))
+            
 
 #EJ 7 (hacer cuando haga el 6)
 #Modificá la función anterior para que además imprima los caracteres que no aparecen en la cadena, pero con el valor 0.
 
 
-#EJ 8 (VER)
-#Definir una función que dada una palabra, nos diga si el palíndromo o no.
-"""def palindromo_si_no(palabr):
+#EJ 8 
+#Definir una función que dada una palabra, nos diga si el palíndromo o no. palindromo = capicua
 
-    if palabr.startwith(letra) and palabr.endswith(letra):
-        return "es palindromo"
+def es_palindromo(palabr):
+    palabr=palabr.lower()
+    palabra_invertida = palabr[::-1]
+    return palabr == palabra_invertida
     
-print(palindromo_si_no(anana))"""
+    
+print(es_palindromo("anana"))
 
 #EJ 9
 #Definir una función llamada productoria que toma como parámetro una lista de números y los multiplica a todos.
@@ -95,4 +104,4 @@ lista_numeros2 = [2,2,2]
 print(productoria(lista_numeros2))
 
 #EJ 10 (FALTA HACER)
- 
+

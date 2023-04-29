@@ -85,13 +85,7 @@ print (funcion1("Buenos dias"))
 print (funcion1("Soy Juli"))
 
 #ej6
-"""
-#ej6 -- (porq esta mal?) y como es la funcion max?
-def long_radio (onda):
-    return onda in min(223) or onda in max(586)
-print (long_radio(250))
-"""
-#porque no puedo usar la coma?
+
 rango_longitud = range(223,586)
 def long_onda (longitud):
     return longitud in rango_longitud
@@ -110,7 +104,7 @@ def tiene_descuento (edad):
     return edad<=12 or edad>=60
 print (tiene_descuento(15))
 
-#ej9 (CHEQUEAR SI NO HAY UNA FORMA MEJOR O SI EL XOR ESTA BIEN USADO)
+#ej9 
 def xor(A,B):
     return A == True and B == False or B == True and A == False 
 print (xor(True, False))
@@ -141,18 +135,6 @@ print (funcion(4))
 print (funcion(5))
 print (funcion(0))
 
-"""
-#ej15 (COMO SE HACE? NO ME SALE)s
-def cuantas_a_A (frase):
-    contar = 0
-    for a in frase or A in frase:
-        return contar + A or a
-print (cuantas_a_A("A cuantas cuadras estamos"))
-
-def cuantas_a(frase):
-    for a or A in [frase]:  
-"""
-
 #ej15
 frase = "Soy MoraaaaA"
 MiLetra= "a" """LA A MAYUSCULA"""
@@ -164,11 +146,17 @@ for letra in frase:
 print(("La letra " + MiLetra + " se repite " + str(contador) + "veces"))
 
 #ej16 (NO ME SALE)
-def dinero(dinero_por_mes):
-    pesos_por_mes == 60000
-    if pesos_por_mes == 60000
+def dinero(dinero_por_mes, pesos_por_mes):
+    pesos_por_mes == "60000"
+    if pesos_por_mes == "60000":
         return 1
     else:
         return dinero_por_mes
+    
+#opcion cheuqear
+def meses_de_subsistencia(dinero):
+    meses = dinero / 60000
+    return round(meses, 2)
 
+print(meses_de_subsistencia(12000))
 
