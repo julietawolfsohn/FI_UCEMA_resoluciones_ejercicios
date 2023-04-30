@@ -17,13 +17,14 @@ en particular es un objeto de la clase Golondrinas
 Que entiende mensajes (llo que las golondrinas entienden) 
 y que tienen las caracteristicas de una Golondrina (atributos)
 """
-print("Pepita al comiendo:", pepita.energia)
+"""print("Pepita al comiendo:", pepita.energia)
 pepita.volar_en_circulos()
 print("Pepita despues de volar:", pepita.energia)
 print(pepita.esta_feliz())
 pepita.comer_alpiste(200)
 print("despues de comer:", pepita.energia)
-print("hasta aca pepita ..")
+print(pepita.esta_en_equilibrio())
+print("hasta aca pepita ..")"""
 
 """ Pepita tiene una energia basal.
 Ahora sabemos que pepita cuando le damos ordenes, esta haciendo algo.
@@ -71,3 +72,7 @@ Para ver polimorfismo necesitamos un observador u otro actor
 """
 from aves import pepita
 print(pepita.volar(1))
+
+from aves import pepita
+pepita.energia = 180
+print(pepita.esta_en_equilibrio())

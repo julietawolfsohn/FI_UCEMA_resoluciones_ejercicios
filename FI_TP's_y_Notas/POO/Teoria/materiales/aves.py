@@ -16,6 +16,14 @@ class Golondrina:
 
   def esta_feliz(self):
     return self.energia > 50
+  
+  def esta_en_equilibrio(self):
+    if self.energia >=150 or self.energia <=300:
+      return "esta en equilibrio"
+    else:
+      return "no esta en equilibrio"
+    
+
 
 class Dragon:     
   def __init__(self, cantidad_dientes, energia):
