@@ -21,13 +21,12 @@ class Titan:
     def salud_actual(self):
         return self.salud
 
-#NO ENTIENDO ESTA PARTE 
     def destruir_casas(self):
-        if (self.cuantas_casas() > 1):
-            if ((self.cuantas_casas() % 1) > 0):
-                self.salud -= (self.cuantas_casas() // 1) * 12.5
+        if (self.cuantas_casas() > 1):  # >1 porque si tiene la energia justa para destruir una casa se va a morir, y no puede
+            if ((self.cuantas_casas() % 1) > 0):  # % resto de 1 = ... va a reomper casas enteras, no casas y media porq aparte se va a morir sino 
+                self.salud -= (self.cuantas_casas() // 1) * 12.5  # // -- division entera (complmeneto del porcenatje)   # 12.5 esta hecho de una regla de 3 
             else:
-                self.salud -= (self.cuantas_casas() - 1) * 12.5
+                self.salud -= (self.cuantas_casas() - 1) * 12.5 # le resto algo que no sea mayor a 1 (porque sino se muere)
         else:
             print("No puede destruir ninguna casa")
             
