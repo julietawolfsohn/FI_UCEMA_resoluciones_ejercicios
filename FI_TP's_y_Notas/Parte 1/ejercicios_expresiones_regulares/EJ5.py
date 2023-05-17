@@ -15,3 +15,9 @@ def empieza_con_numero(string, numero):
         return "No empieza"
     
 print(empieza_con_numero("5juli", "5"))
+
+#me devuelve un bool
+def numero_especifico(string, numero):
+    return bool(re.search("^" + str(numero), string))
+
+print(numero_especifico("45julijuli", "5"))

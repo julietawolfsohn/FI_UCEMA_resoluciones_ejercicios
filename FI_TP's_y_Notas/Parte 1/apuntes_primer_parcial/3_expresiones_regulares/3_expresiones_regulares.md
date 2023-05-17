@@ -1,3 +1,6 @@
+#APPEND --- AGREGAR ALGO A UNA LISTA
+
+
 # Patrones
 > Lo que voy a querer buscar.
 > Se puede escribir como <patron= “   ”> → y después ponerlo en el () del re.
@@ -14,6 +17,11 @@ o directo en el re. como; <re.función (r “   ”,    )
         else:
             bloque de código
 > *<re.findall>* → se obtienen todas las apariciones del patrón.
+    >Ej: "encontrar todos los numeros de capital"
+        import re
+        def tel_capital(texto):
+            return re.findall (“(54911) [0-9] {8}”, texto)
+
 > *<re.sub>* → reemplazas todas las ocurrencias del patrón, por otro en un string.
     > Ej:
         def reemplazar_por_barra (string1):
@@ -44,6 +52,15 @@ o directo en el re. como; <re.función (r “   ”,    )
 > ? →
     ? después de  un caracter → cero o una vez
     ? después de un modificador → todos los matches
+> "^ac.{10}gt$"
+    > que empiece con ac y termine en gt, y que tome 10 caracteres en el medio.
+
+>"ac\d{10}gt"
+    >Que entre ac y gt lea 10 caracteres alfanuméricos.
+    
+>{} el número que va ahí, es el número de caracteres que va a leer. 
+
+
 
 
 

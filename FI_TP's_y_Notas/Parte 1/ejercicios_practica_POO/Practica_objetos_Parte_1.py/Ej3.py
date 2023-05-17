@@ -13,3 +13,4 @@ compu_mora = (Notebook("asus", "harman", 1000))
      
 (compu_mora.aplicar_descuento(5))
 print(compu_mora.precio)
+

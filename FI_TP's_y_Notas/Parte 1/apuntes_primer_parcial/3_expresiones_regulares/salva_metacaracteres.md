@@ -8,7 +8,7 @@ Descripción
 > +	Corresponde al carácter anterior una o más veces. Por ejemplo, zo+ coincide con zoo, pero no con z.
 > ?	Corresponde al carácter anterior cero o una sola vez. Pr ejemplo, a?ve? coincide con ve en never.
 > .	Corresponde a cualquier carácter único excepto el carácter de nueva línea.
-(pattern)	Coincide con un patrón y recuerda la coincidencia. La subserie coincidente puede recuperarse del conjunto de coincidencias resultante utilizando este código: Item [0]... [n]. Para que coincidan los caracteres de paréntesis ( ), utilice \( o \).
+(pattern) Coincide con un patrón y recuerda la coincidencia. La subserie coincidente puede recuperarse del conjunto de coincidencias resultante utilizando este código: Item [0]... [n]. Para que coincidan los caracteres de paréntesis ( ), utilice \( o \).
 > x|y	Coincide con x o y. Por ejemplo, z|wood coincide con z o wood. (z|w)oo coincide con zoo o wood.
 > {n}	n es un entero no negativo. Coincide exactamente n veces. Por ejemplo, o{2} no coincide con o en Bob, pero sí con las dos primeras o de foooood.
 {n,}	En esta expresión, n es un entero no negativo. Coincide con el carácter anterior al menos n veces. Por ejemplo, o{2,} no coincide con la o de Bob y coincide con todas las o de foooood. La expresión o{1,} equivale a o+ y o{0,} equivale a o*.
