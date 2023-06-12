@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
+h1 {
+    color: #000000;
+}
+
+.contexto h1 { 
+    font-family: "VT323", monospace;
+    font-size: xx-large;
+}
+
+.contexto {
+    background-color: darkorchid;
+}
+
+.tabla {
+    
+    background-color: goldenrod;
+    padding-right: 20%;
+    padding-left: 35%;
+}
+
+.tabla p { 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    padding-left: 0%;
+    padding-right: 50%;
+    margin-top: 20%;
+}

@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding:0;
+}
+
+h1 {
+    color: #fa1616;
+}
+
+.welcome p { 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.welcome p {
+    color: #fa1616;
+    height: 15px;
+}
+
+.welcome p:hover {
+    color: #293ba1;
+}
+
+.welcome img{
+    width: 300px;
+}
