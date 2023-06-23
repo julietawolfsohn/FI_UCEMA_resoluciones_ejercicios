@@ -23,4 +23,48 @@ j) Guarde en otro archivo la información para el competitivo (todo lo obtenido,
 
  """
  
- 
+import requests, os, re 
+
+#A
+class Pokemon():
+    def __init__(self, nombre):
+        self.nombre = nombre
+        self.data = self.data_del_pokemon()
+
+    def data_del_pokemon(self):
+        url = f"https://pokeapi.co/api/v2/pokemon/{self.nombre}" #para que es la f?
+        respuesta = requests.get(url)
+        if respuesta.status_code == 200:  #esto no me queda claro
+            return respuesta.json()
+        else:
+            return None
+        
+    def info_completa(self):
+        if self.data:  #no entiendo esta parte
+            return self.data
+        else:
+            return "El pokemon (self.nombre) no existe"
+    
+#F
+
+    def cant_habilidades(self):
+        ("https://pokeapi.co/api/v2/abilities")
+        return (f'Tiene {(datos["abilities"])} habilidades')
+
+  """def get_abilities(self):
+        if self.data:
+            abilities = self.data.get("abilities", [])
+            ability_names = [ability["ability"]["name"] for ability in abilities]
+            return ability_names
+        else:
+            return []"""
+
+        
+        
+        
+        
+nombre_pokemon = "pikachu"
+pokemon = Pokemon(nombre_pokemon)
+data_completa = pokemon.info_completa()
+
+print(data_completa)
