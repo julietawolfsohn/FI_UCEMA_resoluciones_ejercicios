@@ -3,7 +3,11 @@
     padding: 0%;
     box-sizing: border-box;
 }
-
+body{
+    background-color: #31aa7c;
+    height: 150px;
+    width: auto;
+}
 .pagina{
     height: 768px;
     background-color: #31aa7c;
