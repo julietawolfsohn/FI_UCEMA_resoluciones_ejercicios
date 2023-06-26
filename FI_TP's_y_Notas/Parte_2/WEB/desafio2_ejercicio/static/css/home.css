@@ -53,14 +53,14 @@ p{
     width: 50%;
     height: auto;
     margin-top: 5%;
-    margin-left: 10%;
+    margin-left: 20%;
 }
 
 .imagen_redes{
     width: 50%;
     height: auto;
     margin-top: 35%;
-    margin-left: -50%;
+    margin-left: -41%;
 
 }
 
@@ -97,12 +97,14 @@ p{
 .imagen_play{
     height: 30%;
     width: 20%;
+    margin-left: -50%;
 }
 
 .imagen_cuadros4{
     width: 100%;
     height: auto;
     position: relative;
-    opacity:0.5
+    opacity:0.5;
+    margin-left: -400px;
 }
 
