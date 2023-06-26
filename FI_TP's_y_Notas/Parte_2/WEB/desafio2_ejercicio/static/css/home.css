@@ -1,0 +1,108 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.pagina{
+    height: 768px;
+    background-color: #96f7d2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+}
+
+.cuadrante1{
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    border: 2px solid rgba(0, 0, 0, 0.509);
+    overflow: hidden;
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-family: 'VT323', monospace;
+    font-size: 80px;
+    position: absolute;
+    right: 20%;
+    left: 15%;
+    top: 18%;
+
+}
+.cuadrante2{
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    border: 2px solid rgba(0, 0, 0, 0.509);
+    overflow: hidden;
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+.imagen_cuadros{
+    width: 100%;
+    height: auto;
+    position: relative;
+    opacity:0.5
+}
+
+.imagen_buscar_shampoo{
+    width: 50%;
+    height: auto;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.imagen_redes{
+    width: 50%;
+    height: auto;
+    margin-top: 35%;
+    margin-left: -50%;
+
+}
+
+.cuadrante3{
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 3/3;
+    border: 2px solid rgba(0, 0, 0, 0.509);
+    overflow: hidden;
+    margin-right: -1px;
+    margin-bottom: -1px;  
+}
+
+.texto3{
+    color: rgb(0, 0, 0);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 60px;
+    position: absolute;
+    margin-right: 20%;
+    margin-left: 7%;
+    margin-top: 70px;
+}
+
+.cuadrante4{
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 3/3;
+    border: 2px solid rgba(0, 0, 0, 0.509);
+    overflow: hidden;
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+
+.imagen_play{
+    height: 30%;
+    width: 20%;
+}
+
+.imagen_cuadros4{
+    width: 100%;
+    height: auto;
+    position: relative;
+    opacity:0.5
+}
+
