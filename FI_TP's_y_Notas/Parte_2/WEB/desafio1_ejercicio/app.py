@@ -6,3 +6,4 @@ juli = Flask(__name__)
 @juli.get("/")
 def home():
     return render_template("home.html")
+
