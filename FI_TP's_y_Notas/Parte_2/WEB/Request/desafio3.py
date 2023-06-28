@@ -23,7 +23,7 @@ j) Guarde en otro archivo la información para el competitivo (todo lo obtenido,
 
  """
  
-import requests, os, re 
+import requests, os, re, glob
 
 #A
 class Pokemon():
